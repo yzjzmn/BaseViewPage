@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrResultsPage" customModule="BasePage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="问题" translatesAutoresizingMaskIntoConstraints="NO" id="637-gt-E8h">
+                    <rect key="frame" x="150" y="120" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="G9h-uv-xEU"/>
+                        <constraint firstAttribute="height" constant="75" id="sDm-sE-u4K"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数据获取失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiJ-oZ-yhn">
+                    <rect key="frame" x="141.5" y="213" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oej-0S-1Gy">
+                    <rect key="frame" x="128" y="249" width="120" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1QR-P7-tfY"/>
+                        <constraint firstAttribute="width" constant="120" id="m8k-20-lUW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="重新获取">
+                        <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="retryBtnPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="csF-r2-IMG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xiJ-oZ-yhn" firstAttribute="top" secondItem="637-gt-E8h" secondAttribute="bottom" constant="18" id="Cmm-jM-0Qs"/>
+                <constraint firstItem="oej-0S-1Gy" firstAttribute="centerX" secondItem="637-gt-E8h" secondAttribute="centerX" id="CtV-5t-4jw"/>
+                <constraint firstItem="637-gt-E8h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I6g-zk-LVa"/>
+                <constraint firstItem="xiJ-oZ-yhn" firstAttribute="centerX" secondItem="637-gt-E8h" secondAttribute="centerX" id="dLx-hp-DrK"/>
+                <constraint firstItem="oej-0S-1Gy" firstAttribute="top" secondItem="637-gt-E8h" secondAttribute="bottom" constant="54" id="oKm-lG-Cc3"/>
+                <constraint firstItem="637-gt-E8h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="odV-r0-cig"/>
+            </constraints>
+            <connections>
+                <outlet property="retryBtn" destination="oej-0S-1Gy" id="3Eg-UN-vr1"/>
+                <outlet property="titleLabel" destination="xiJ-oZ-yhn" id="dz9-KS-RxQ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="问题" width="200" height="200"/>
+    </resources>
+</document>
