@@ -54,6 +54,7 @@
             </constraints>
             <connections>
                 <outlet property="retryBtn" destination="oej-0S-1Gy" id="3Eg-UN-vr1"/>
+                <outlet property="tipImageView" destination="637-gt-E8h" id="ah0-5q-W8P"/>
                 <outlet property="titleLabel" destination="xiJ-oZ-yhn" id="dz9-KS-RxQ"/>
             </connections>
         </view>

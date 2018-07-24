@@ -36,6 +36,10 @@
                 <constraint firstItem="XSS-u6-ueL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="k9O-Le-Zln"/>
                 <constraint firstItem="XSS-u6-ueL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vC5-mr-Z30"/>
             </constraints>
+            <connections>
+                <outlet property="tipImageView" destination="XSS-u6-ueL" id="mMD-gN-Z5h"/>
+                <outlet property="tipLabel" destination="YXD-7E-eRH" id="mug-DL-G53"/>
+            </connections>
         </view>
     </objects>
     <resources>

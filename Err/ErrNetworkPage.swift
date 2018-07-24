@@ -12,6 +12,8 @@ class ErrNetworkPage: UIView {
 
     typealias retryAction = () -> Void
     
+    @IBOutlet weak var tipImageView: UIImageView!
+    @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var retryBtn: UIButton!
     var block:retryAction?
     

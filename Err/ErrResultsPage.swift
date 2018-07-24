@@ -14,6 +14,8 @@ class ErrResultsPage: UIView {
     
     @IBOutlet weak var retryBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tipImageView: UIImageView!
+    
     
     var block:retryAction?
     
