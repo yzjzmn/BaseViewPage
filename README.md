@@ -8,8 +8,8 @@ basePage?.showLoadingPage()</br>
 basePage?.dismiss()</br>
 basePage?.showNoResultsPage()</br>
 basePage?.showErrNetworkPage {</br>
-</br>  //do 
+  //do 
 </br>}</br>
 basePage?.showErrResultsPage {</br>
-</br>  //do 
+  //do 
 </br>}</br>
