@@ -18,17 +18,19 @@ class NoResultsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         basePage = PromptPage.init(self)
-
-        //网络请求
+        
+        //api request
         requestNet()
     }
 
     func requestNet() {
         basePage?.showLoadingPage()
 
-        //成功的话
-//        basePage?.dismiss()
-        //没有结果
+        // if api success, do: basePage?.dismiss()
+        
+        // basePage?.dismiss()
+        
+        // else api fail, do: basePage?.showNoResultsPage
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
             self.basePage?.showNoResultsPage()

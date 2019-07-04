@@ -19,7 +19,7 @@ class ErrResultsViewController: UIViewController {
         
         basePage = PromptPage.init(self)
         
-        //网络请求
+        //api request
         requestNet()
     }
 
@@ -27,9 +27,11 @@ class ErrResultsViewController: UIViewController {
         
         basePage?.showLoadingPage()
         
-        //成功的话
-        //        basePage?.dismiss()
-        //网络错误
+        // if api success, do: basePage?.dismiss()
+        
+        // basePage?.dismiss()
+        
+        // else api fail, do: basePage?.showErrNetworkPage
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
             self.basePage?.showErrResultsPage {
                 self.requestNet()
