@@ -45,9 +45,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydo-zP-R78">
-                                <rect key="frame" x="162" y="220" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydo-zP-R78">
+                                <rect key="frame" x="162" y="300.5" width="51" height="30"/>
                                 <state key="normal" title="loading"/>
                                 <connections>
                                     <action selector="showLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9h-xp-icO"/>
@@ -57,8 +56,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hJu-LL-jWe" secondAttribute="bottom" id="8sB-38-5bb"/>
+                            <constraint firstItem="ydo-zP-R78" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-40" id="cQg-io-uf1"/>
                             <constraint firstItem="hJu-LL-jWe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eqP-xt-kUc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hJu-LL-jWe" secondAttribute="trailing" id="lpP-7R-rSy"/>
+                            <constraint firstItem="ydo-zP-R78" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mJe-Rv-09T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
