@@ -44,6 +44,11 @@ class PromptPage: UIView {
         let page = LoadingPage.showPage(self)
         return page
     }()
+    
+    lazy var loadingOnPage : LoadOnPage = {
+        let page = LoadOnPage.showPage(self)
+        return page
+    }()
 
     //init superAdd
     init(_ viewCtr:UIViewController) {
@@ -60,6 +65,7 @@ class PromptPage: UIView {
         pages.append(errNetworkPage)
         pages.append(errResultsPage)
         pages.append(loadingPage)
+        pages.append(loadingOnPage)
         
     }
 
@@ -67,6 +73,20 @@ class PromptPage: UIView {
     func showLoadingPage() {
         hideAllPages()
         self.loadingPage.isHidden = false
+    }
+    
+    /// loading on
+    func showLoadingOnPage() {
+        hideAllPages()
+        self.loadingOnPage.isHidden = false
+    }
+    
+    /// loading on
+    /// - Parameter imgStr: 自定义背景图
+    func showLoadingOnPage(_ imgStr:String) {
+        hideAllPages()
+        self.loadingOnPage.isHidden = false
+        self.loadingOnPage.bgImgView.image = UIImage.init(named: imgStr)
     }
     
     /// noResultsPage
@@ -168,6 +188,7 @@ class PromptPage: UIView {
         errResultsPage.isHidden = true
         noResultsPage.isHidden  = true
         loadingPage.isHidden    = true
+        loadingOnPage.isHidden = true
     }
     
     /// 隐藏page

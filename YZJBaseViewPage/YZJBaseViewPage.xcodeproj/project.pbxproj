@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A9F10D23B9E0A10084BD32 /* LoadOnPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A9F10C23B9E0A10084BD32 /* LoadOnPage.xib */; };
+		31A9F10F23B9E0B50084BD32 /* LoadOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9F10E23B9E0B50084BD32 /* LoadOnPage.swift */; };
+		31A9F11123B9E17B0084BD32 /* LoadingOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9F11023B9E17B0084BD32 /* LoadingOnViewController.swift */; };
 		AC6F756D20FDCC0700AB81D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F756C20FDCC0700AB81D6 /* AppDelegate.swift */; };
 		AC6F756F20FDCC0700AB81D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F756E20FDCC0700AB81D6 /* ViewController.swift */; };
 		AC6F757220FDCC0700AB81D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F757020FDCC0700AB81D6 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31A9F10C23B9E0A10084BD32 /* LoadOnPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadOnPage.xib; sourceTree = "<group>"; };
+		31A9F10E23B9E0B50084BD32 /* LoadOnPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOnPage.swift; sourceTree = "<group>"; };
+		31A9F11023B9E17B0084BD32 /* LoadingOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOnViewController.swift; sourceTree = "<group>"; };
 		AC6F756920FDCC0700AB81D6 /* YZJBaseViewPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZJBaseViewPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F756C20FDCC0700AB81D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6F756E20FDCC0700AB81D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				AC6F75AF20FDD28A00AB81D6 /* NoResultsViewController.swift */,
 				AC6F75B120FDD2B000AB81D6 /* ErrNetworkViewController.swift */,
 				AC6F75B320FDD2C800AB81D6 /* ErrResultsViewController.swift */,
+				31A9F11023B9E17B0084BD32 /* LoadingOnViewController.swift */,
 				AC6F757020FDCC0700AB81D6 /* Main.storyboard */,
 				AC6F757520FDCC0800AB81D6 /* LaunchScreen.storyboard */,
 				AC6F757820FDCC0800AB81D6 /* Info.plist */,
@@ -157,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				AC6F75A220FDCC7000AB81D6 /* PromptPage.swift */,
+				31A9F10E23B9E0B50084BD32 /* LoadOnPage.swift */,
+				31A9F10C23B9E0A10084BD32 /* LoadOnPage.xib */,
 				AC6F759D20FDCC7000AB81D6 /* LoadingPage.swift */,
 				AC6F75A520FDCC7000AB81D6 /* LoadingPage.xib */,
 				AC6F759E20FDCC7000AB81D6 /* ErrNetworkPage.swift */,
@@ -275,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6F757720FDCC0800AB81D6 /* LaunchScreen.storyboard in Resources */,
+				31A9F10D23B9E0A10084BD32 /* LoadOnPage.xib in Resources */,
 				AC6F75AE20FDCC7000AB81D6 /* LoadingPage.xib in Resources */,
 				AC6F75AD20FDCC7000AB81D6 /* NoResultsPage.xib in Resources */,
 				AC6F757220FDCC0700AB81D6 /* Main.storyboard in Resources */,
@@ -306,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6F75A620FDCC7000AB81D6 /* LoadingPage.swift in Sources */,
+				31A9F10F23B9E0B50084BD32 /* LoadOnPage.swift in Sources */,
 				AC6F75B420FDD2C800AB81D6 /* ErrResultsViewController.swift in Sources */,
 				AC6F756F20FDCC0700AB81D6 /* ViewController.swift in Sources */,
 				AC6F75A920FDCC7000AB81D6 /* ErrResultsPage.swift in Sources */,
@@ -314,6 +325,7 @@
 				AC6F75AA20FDCC7000AB81D6 /* NoResultsPage.swift in Sources */,
 				AC6F75B220FDD2B000AB81D6 /* ErrNetworkViewController.swift in Sources */,
 				AC6F75B020FDD28A00AB81D6 /* NoResultsViewController.swift in Sources */,
+				31A9F11123B9E17B0084BD32 /* LoadingOnViewController.swift in Sources */,
 				AC6F75A720FDCC7000AB81D6 /* ErrNetworkPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHU-rl-shC">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHU-rl-shC">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,6 +36,11 @@
                                     <barButtonItem title="ErrNetwork" id="A31-31-lu9">
                                         <connections>
                                             <segue destination="cga-v6-CIT" kind="show" id="6bc-Cn-b6X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Load" id="iQo-iN-W4u">
+                                        <connections>
+                                            <segue destination="kPF-ur-JbZ" kind="show" id="AHa-sD-oe5"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -95,6 +98,22 @@
             </objects>
             <point key="canvasLocation" x="1697" y="-428"/>
         </scene>
+        <!--Loading On View Controller-->
+        <scene sceneID="1wF-Jf-C7d">
+            <objects>
+                <viewController id="kPF-ur-JbZ" customClass="LoadingOnViewController" customModule="YZJBaseViewPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cOK-1l-sIf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qIt-3Y-54g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LF1-XQ-fZO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxj-gL-AmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="259"/>
+        </scene>
         <!--Err Network View Controller-->
         <scene sceneID="CUC-hZ-CAH">
             <objects>
@@ -116,7 +135,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zHU-rl-shC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6di-nl-bLd">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
